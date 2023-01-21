@@ -25,3 +25,9 @@ Aula 2 - Semana 2 - Acelera Java
 
 - [x]  Criar o model
 - [x]  Criar o repository
+
+Aula 3 - Semana 2 - Acelera Java
+
+- [x]  Criar uma rota que liste todos os carros via GET
+- [x]  Criar uma rota que atualize um carro via PUT
+- [x]  Criar uma rota que exclua um carro via DELETE
