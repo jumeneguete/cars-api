@@ -19,3 +19,9 @@ Crie uma api Spring que seja capaz de receber os seguintes dados via POST
 - [x]  Criar uma rota de api que possa ser consumida via POST
 - [x]  Criar um DTO que represente os dados recebidos
 - [x]  Imprimir no console do Spring alguns dos dados pegando do DTO recebidos via post.
+
+
+Aula 2 - Semana 2 - Acelera Java
+
+- [x]  Criar o model
+- [x]  Criar o repository
