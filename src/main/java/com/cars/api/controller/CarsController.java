@@ -16,6 +16,8 @@ import com.cars.api.dto.CarDTO;
 import com.cars.api.model.Car;
 import com.cars.api.repository.CarRepository;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api/cars")
 public class CarsController {
@@ -38,12 +40,12 @@ public class CarsController {
     }
 
     @PostMapping
-    public void createCar(@RequestBody CarDTO req) {
+    public void createCar(@RequestBody @Valid CarDTO req) {
         repository.save(new Car(req));
     }
 
     @PutMapping("/{id}")
-    public void updateCarById(@PathVariable Long id, @RequestBody CarDTO req){
+    public void updateCarById(@PathVariable Long id, @RequestBody @Valid CarDTO req){
         repository.findById(id).map(car -> {
             car.setModelo(req.modelo());
             car.setFabricante(req.fabricante());
