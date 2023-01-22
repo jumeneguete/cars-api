@@ -407,3 +407,221 @@ Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_
 2023.01.21 18:18:15 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/controller/CarsController.java
 2023.01.21 18:19:34 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/controller/CarsController.java
 2023.01.21 18:19:35 INFO  time: code lens generation in 1.2s
+2023.01.22 11:46:25 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/.metals/lsp.trace.json or /Users/juliana.meneguete/Library/Caches/org.scalameta.metals/lsp.trace.json
+2023.01.22 11:46:30 INFO  logging to file /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/.metals/metals.log
+2023.01.22 11:46:30 INFO  Started: Metals version 0.11.10 in workspace '/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/juliana.meneguete/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.22 11:46:36 INFO  time: initialize in 6.22s
+2023.01.22 11:46:43 WARN  Build server is not auto-connectable.
+2023.01.22 11:46:44 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java
+jan 22, 2023 11:46:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.01.22 11:46:46 WARN  Running javac-semanticdb failed for file:///Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java. Output:
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java:11: error: class, interface, or enum expected
+public record CarDTO(
+       ^
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java:12: error: class, interface, or enum expected
+        @NotBlank String modelo,
+                  ^
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java:13: error: class, interface, or enum expected
+        @NotBlank String fabricante,
+                  ^
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java:14: error: class, interface, or enum expected
+        @Past Date dataFabricacao,
+              ^
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java:15: error: class, interface, or enum expected
+        @NotNull double valor,
+                 ^
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/dto/CarDTO.java:16: error: class, interface, or enum expected
+        @Max(2023) int anoModelo) {
+                   ^
+6 errors
+jan 22, 2023 12:27:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.01.22 12:28:24 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:28:45 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/controller/CarsController.java
+2023.01.22 12:30:27 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/ApiApplication.java
+2023.01.22 12:32:48 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:33:38 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:34:25 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+jan 22, 2023 12:35:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 673
+2023.01.22 12:36:26 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/model/Car.java
+2023.01.22 12:37:10 WARN  Cannot tokenize Java file file:///Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+jan 22, 2023 12:37:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:147)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:54)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:49)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$3(MetalsLanguageServer.scala:1809)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.01.22 12:37:10 WARN  Cannot tokenize Java file file:///Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:60)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2023.01.22 12:37:10 WARN  Cannot tokenize Java file file:///Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2023.01.22 12:38:20 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:39:01 WARN  Cannot tokenize Java file file:///Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+jan 22, 2023 12:39:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:147)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:54)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:49)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$3(MetalsLanguageServer.scala:1809)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.01.22 12:43:44 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:43:45 WARN  Running javac-semanticdb failed for file:///Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java. Output:
+/Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java:42: error: ')' expected
+            car.setAnoModelo(req.anoModelo()0);
+                                            ^
+1 error
+2023.01.22 12:44:09 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:45:18 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:45:36 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:46:03 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/controller/CarsController.java
+2023.01.22 12:46:27 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:47:02 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:47:08 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/controller/CarsController.java
+2023.01.22 12:47:09 INFO  time: code lens generation in 1.24s
+2023.01.22 12:51:29 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/service/CarsService.java
+2023.01.22 12:51:52 WARN  no build target for: /Users/juliana.meneguete/Documents/projetos/java-driven/cars-api/src/main/java/com/cars/api/controller/CarsController.java

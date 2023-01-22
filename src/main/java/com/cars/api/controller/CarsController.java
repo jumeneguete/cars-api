@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cars.api.dto.CarDTO;
 import com.cars.api.model.Car;
 import com.cars.api.repository.CarRepository;
+import com.cars.api.service.CarsService;
 
 import jakarta.validation.Valid;
 
@@ -23,7 +24,7 @@ import jakarta.validation.Valid;
 public class CarsController {
 
     @Autowired
-    private CarRepository repository;
+    private CarsService service;
 
     // Aula 1 - Semana 2 - Exercicio 2
     // @PostMapping
@@ -36,30 +37,22 @@ public class CarsController {
 
     @GetMapping
     public List<Car> getCars() {
-        return repository.findAll();
+        return service.getCars();
     }
 
     @PostMapping
     public void createCar(@RequestBody @Valid CarDTO req) {
-        repository.save(new Car(req));
+        service.createCar(req);
     }
 
     @PutMapping("/{id}")
     public void updateCarById(@PathVariable Long id, @RequestBody @Valid CarDTO req){
-        repository.findById(id).map(car -> {
-            car.setModelo(req.modelo());
-            car.setFabricante(req.fabricante());
-            car.setDataFabricacao((req.dataFabricacao()));
-            car.setValor(req.valor());
-            car.setAnoModelo(req.anoModelo());
-
-            return repository.save(car);
-        });
+        service.updateCarById(id, req);
 
     }
     
     @DeleteMapping("/{id}")
     public void deleteCarById(@PathVariable Long id){
-        repository.deleteById(id);
+        service.deleteCarById(id);
     }
 }
