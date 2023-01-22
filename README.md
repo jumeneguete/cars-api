@@ -31,3 +31,9 @@ Aula 3 - Semana 2 - Acelera Java
 - [x]  Criar uma rota que liste todos os carros via GET
 - [x]  Criar uma rota que atualize um carro via PUT
 - [x]  Criar uma rota que exclua um carro via DELETE
+- [x]  Adicionar validação para os atributos do Carro
+
+
+Aula 4 - Semana 2 - Acelera Java
+
+- [x]  Criar a camada de Service
