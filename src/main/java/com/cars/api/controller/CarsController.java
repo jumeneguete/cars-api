@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cars.api.dto.CarDTO;
 import com.cars.api.model.Car;
-import com.cars.api.repository.CarRepository;
 import com.cars.api.service.CarsService;
 
 import jakarta.validation.Valid;

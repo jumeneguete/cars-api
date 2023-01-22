@@ -1,6 +1,5 @@
 package com.cars.api.dto;
 
-import java.time.Year;
 import java.util.Date;
 
 import jakarta.validation.constraints.Max;
